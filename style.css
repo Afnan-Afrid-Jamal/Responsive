@@ -87,6 +87,9 @@ nav {
 }
 
 #hero-text button {
+    width: 196px;
+    height: 44px;
+    margin-top: 20px;
     font-size: 1.1rem;
     font-weight: 700;
     padding: 10px 24px;
@@ -107,7 +110,6 @@ nav {
     position: relative;
     width: 440px;
     max-width: 100%;
-
 }
 
 .hero-image1 {
@@ -156,8 +158,8 @@ nav {
 
 #sponsor {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
-    margin: 400px auto;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 350px;
     border-top: 1px rgb(219, 226, 234) solid;
     border-bottom: 1px rgb(219, 226, 234) solid;
     padding: 50px;
@@ -168,9 +170,67 @@ nav {
 @media screen and (max-width:576px) {
     #sponsor {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin: 100px;
         justify-content: center;
         gap: 30px;
     }
+}
+
+#popular {
+    margin-top: 250px;
+}
+
+#popular h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 100px;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    padding: 20px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.75)
+}
+
+.card:hover {
+    transform: translate(5px, 5px);
+}
+
+
+
+.card-title {
+    margin: 15px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+}
+
+.rating h5 {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    font-size: 1rem;
+}
+
+.rating img {
+    width: 70px;
+    height: auto;
 }
