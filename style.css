@@ -234,3 +234,19 @@ nav {
     width: 70px;
     height: auto;
 }
+
+/* popular section responsive */
+
+@media screen and (max-width:576px) {
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        max-width: 100%;
+    }
+    #popular h2
+    {
+        text-align: center;
+
+    }
+}
